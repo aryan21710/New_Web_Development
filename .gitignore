@@ -1,0 +1,13 @@
+node_modules/
+*.jpg
+*.jpeg
+*.png
+*.py
+*.pyc
+package.json
+package-lock.json
+Udemy*
+UDEMY*
+clipboard.*
+PhaserJS/
+Webgl/

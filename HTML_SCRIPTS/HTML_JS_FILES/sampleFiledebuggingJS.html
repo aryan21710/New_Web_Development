@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+			input {
+				width: 350px;
+				height: 40px;
+				font-size: 20px;
+				margin: 15px;
+                border: 5px solid black;
+			}
+	</style>
+</head>
+<body>
+	<p> this is a dummy html file. </p>
+		<input id='i1'><br>
+        <input disabled type="button" value='+' onclick="printOutput()"><br>
+        <input id="i2"><br>
+        <input type="button" value='=' onclick="printOutput()"><br>
+		<input id="i3">
+	<script>
+		const printOutput=()=>{
+			const output=getValues();
+
+			document.querySelector('#i3').value=
+			`ADDITION OF ${output[[0]]} and ${output[1]} is:- ${parseInt(output[0]) + parseInt(output[1])}`
+		}
+
+		const getValues=()=>{
+			return [].concat(`${document.querySelector('#i1').value}`,`${document.querySelector('#i2').value}`)
+		}
+	</script>
+</body>
+</html>
